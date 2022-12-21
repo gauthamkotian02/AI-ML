@@ -322,7 +322,7 @@ waterJugSolver(0, 0)<br>
 OUTPUT:<br>
 Steps:<br> 
 0 0<br>
-4 0
+4 0<br><br>
 4 3<br>
 0 3<br>
 3 0<br>
@@ -330,3 +330,29 @@ Steps:<br>
 4 2<br>
 0 2<br>
 True<br>
+
+ Recursive Python function to solve tower of hanoi<br>
+ 
+ 
+def TowerOfHanoi(n, from_rod, to_rod, aux_rod):<br>
+    if n == 0:<br>
+        return<br>
+    TowerOfHanoi(n-1, from_rod, aux_rod, to_rod)<br>
+    print("Move disk", n, "from rod", from_rod, "to rod", to_rod)<br>
+    TowerOfHanoi(n-1, aux_rod, to_rod, from_rod)<br>
+ 
+ 
+ Driver code<br>
+N = 3<br>
+
+ A, C, B are the name of rods<br>
+TowerOfHanoi(N, 'A', 'C', 'B')<br>
+
+OUTPUT:<br>
+Move disk 1 from rod A to rod C<br>
+Move disk 2 from rod A to rod B<br>
+Move disk 1 from rod C to rod B<br>
+Move disk 3 from rod A to rod C<br>
+Move disk 1 from rod B to rod A<br>
+Move disk 2 from rod B to rod C<br>
+Move disk 1 from rod A to rod C<br>
