@@ -319,3 +319,14 @@ print("Steps: ")<br>
  Call the function and pass the<br>
  initial amount of water present in both jugs.<br>
 waterJugSolver(0, 0)<br>
+OUTPUT:<br>
+Steps:<br> 
+0 0<br>
+4 0
+4 3<br>
+0 3<br>
+3 0<br>
+3 3<br>
+4 2<br>
+0 2<br>
+True<br>
